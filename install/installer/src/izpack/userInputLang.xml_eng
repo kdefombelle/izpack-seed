@@ -1,0 +1,5 @@
+<langpack>
+  <str id="input.comment" txt="Please enter the below configuration parameters (paths are relative to your installation directory)"/>
+  <str id="input.extra.folder" txt="Extra report configuration package folder:"/>
+  <str id="error.extra.folder" txt="The extra folder must not be null"/>
+</langpack>

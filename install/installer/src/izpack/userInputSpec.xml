@@ -1,0 +1,14 @@
+<userInput>
+    <panel id="extraPackConfiguration" order="0">
+        
+        <field type="title" align="left" txt="Sample Application Configuration" id="input.title" />
+
+        <field type="staticText" align="left" txt="Please enter the below configuration parameters (paths are relative to your installation directory)" id="input.comment" />
+        
+        <field type="text" variable="extra.folder">
+                <spec txt="Extra package folder:" id="input.extra.folder" size="25" set="extra" />
+            <validator class="com.izforge.izpack.panels.userinput.validator.NotEmptyValidator" txt="The extra folder is mandatory!" id="error.extra.folder" />
+        </field>
+        
+    </panel>
+</userInput>

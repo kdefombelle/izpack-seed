@@ -1,0 +1,5 @@
+<langpack>
+  <str id="input.comment" txt="Veuillez renseigner les proprietes ci-dessous (les chemins sont relatifs a votre repertoire d'installation)"/>
+  <str id="input.extra.folder" txt="Repertoire d'installation du package de configuration des extras:"/>
+  <str id="error.extra.folder" txt="Le repertoire d'extra doit etre renseigne"/>
+</langpack>

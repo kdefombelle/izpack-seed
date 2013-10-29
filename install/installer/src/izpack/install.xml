@@ -1,0 +1,82 @@
+<installation version="5.0" xmlns:izpack="http://izpack.org/schema/installation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://izpack.org/schema/installation http://izpack.org/schema/5.0/izpack-installation-5.0.xsd">
+
+    <info>
+        <appname>Sample Application</appname>
+        <appversion>1.0</appversion>
+        <authors>
+            <author email=" kdefombelle-work@yahoo.fr" name="Karim de Fombelle" />
+        </authors>
+        <appsubpath>sample</appsubpath>
+        <javaversion>1.6</javaversion>
+        <uninstaller write="no" />
+    </info>
+
+    <locale>
+        <langpack iso3="eng" />
+        <!-- <langpack iso3="fra" /> -->
+    </locale>
+
+    <resources>
+        <!-- <res id="InfoPanel.info" src="doc/readme.txt" parse="yes" /> -->
+        <res id="LicencePanel.licence" src="legal/LICENSE.txt" />
+        <res id="Installer.image" src="images/izpack-logo-big_med.png" />
+        <res id="userInputSpec.xml" src="userInputSpec.xml" />
+        <res id="userInputLang.xml_eng" src="userInputLang.xml_eng" />
+        <res id="userInputLang.xml_fra" src="userInputLang.xml_fra" />
+    </resources>
+
+    <guiprefs width="800" height="500" resizable="no">
+        <!-- <splash>images/izpack-logo-big_med.png</splash> -->
+        <laf name="looks">
+            <os family="windows" />
+            <param name="variant" value="windows" />
+        </laf>
+        <laf name="looks">
+            <os family="unix" />
+            <param name="variant" value="mist-silver" />
+        </laf>
+        <laf name="substance">
+            <os family="mac" />
+            <param name="variant" value="mist-aqua" />
+        </laf>
+        <modifier key="useHeadingPanel" value="yes" />
+    </guiprefs>
+
+    <conditions>
+
+        <condition type="packselection" id="extraPackageSelected">
+            <name>Extra</name>
+        </condition>
+
+    </conditions>
+
+    <packs>
+
+        <pack name="SampleApplication" required="yes">
+            <description>The mandatory files for the sample application</description>
+            <fileset dir="sample-application" targetdir="${INSTALL_PATH}/sample-application" override="true" />
+        </pack>
+
+        <pack name="Extra" required="no">
+            <description>The extra files</description>
+            <fileset dir="extra" targetdir="${INSTALL_PATH}/sample-application/${extra.folder}" override="true" />
+        </pack>
+
+    </packs>
+
+    <panels>
+
+        <!-- <panel classname="com.kdefombelle.sample.FirstPanel" /> -->
+        <panel id="hello" classname="HelloPanel" />
+        <panel id="licence" classname="LicencePanel" />
+        <panel id="target" classname="TargetPanel" />
+        <panel id="packs" classname="PacksPanel" />
+        <panel id="extraPackConfiguration" condition="extraPackageSelected" classname="UserInputPanel" />
+        <panel id="install" classname="InstallPanel" />
+        <!-- panel classname="SimpleFinishPanel" / -->
+
+    </panels>
+
+
+</installation>
