@@ -14,9 +14,6 @@ The sample project is organised as follows:
 
 ### Application modules
 A dummy application displaying a parameter in a log.
-Application will be run once installed as follows:
-
-`./run.sh nameToBeLogged`
 
 ### Install modules
 Unlike IzPack [wiki](http://docs.codehaus.org/display/IZPACK/Compiling+Using+Maven), for the sake of code organisation, this sample proposes an approach with 3 modules instead of 2 in IzPack documentation.
@@ -24,3 +21,11 @@ Unlike IzPack [wiki](http://docs.codehaus.org/display/IZPACK/Compiling+Using+Mav
 * an assembly module called __package__
 * an additional __panel__ module
 * an __IzPack installer__ module
+
+Once built (mvn clean install), the installer will be generated under install/installer/target/izpack-seed-installer-${project.version}.jar
+Execute the jar double cliking on it or executing java - jar izpack-seed-installer-${project.version}.jar
+The installer is launched.
+
+Finally to execute the application, go to its installation directory and run
+`./run.sh "this is the text which will be logged"`
+(run.sh should be executable)

@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.kdefombelle.sample</groupId>
-        <artifactId>sample-install-parent</artifactId>
+        <groupId>fr.kdefombelle.sample</groupId>
+        <artifactId>izpack-seed-install-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>assembly-package</artifactId>
+    <artifactId>izpack-seed-package</artifactId>
 
-    <name>Install :: Assembly Package</name>
+    <name>IzPack Seed :: Install Package</name>
 
     <build>
 
@@ -45,8 +45,8 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.kdefombelle.sample</groupId>
-            <artifactId>sample-application</artifactId>
+            <groupId>fr.kdefombelle.sample</groupId>
+            <artifactId>izpack-seed-sample-app</artifactId>
             <version>${project.version}</version>
         </dependency>
 

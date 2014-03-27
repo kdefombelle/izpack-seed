@@ -1,6 +1,7 @@
-package com.kdefombelle.sample;
+package fr.kdefombelle.sample;
 
 
+import fr.kdefombelle.sample.SampleApplicationBean;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

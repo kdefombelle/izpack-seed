@@ -1,4 +1,4 @@
-package com.kdefombelle.sample;
+package fr.kdefombelle.sample;
 
 import org.apache.commons.lang.Validate;
 import org.slf4j.Logger;
@@ -11,8 +11,9 @@ public class SampleApplicationBean {
 
     private Logger logger = LoggerFactory.getLogger(SampleApplicationBean.class);
 
-    public SampleApplicationBean(String name) {
-        Validate.notNull(name);
-        logger.info("{} application launched", name);
+    public SampleApplicationBean(String text) {
+        Validate.notNull(text);
+        logger.info("application launched");
+        logger.info("here is the text: '{}'", text);
     }
 }

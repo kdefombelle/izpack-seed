@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.kdefombelle.sample</groupId>
-        <artifactId>sample-install-parent</artifactId>
+        <groupId>fr.kdefombelle.sample</groupId>
+        <artifactId>izpack-seed-install-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>izpack-installer</artifactId>
+    <artifactId>izpack-seed-installer</artifactId>
 
-    <name>Install :: IzPack Installer</name>
+    <name>Izpack Seed :: Install IzPack Installer</name>
 
     <properties>
         <izpack.staging>${project.build.directory}/staging</izpack.staging>
@@ -52,8 +52,8 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>com.kdefombelle.sample</groupId>
-                                    <artifactId>sample-package</artifactId>
+                                    <groupId>fr.kdefombelle.sample</groupId>
+                                    <artifactId>izpack-seed-package</artifactId>
                                     <version>${project.version}</version>
                                     <type>zip</type>
                                     <overWrite>true</overWrite>
@@ -79,7 +79,7 @@
                             <overWriteReleases>true</overWriteReleases>
                             <overWriteSnapshots>true</overWriteSnapshots>
                             <overWriteIfNewer>true</overWriteIfNewer>
-                            <includeArtifactIds>repo-allocation-installer-panel</includeArtifactIds>
+                            <includeArtifactIds>izpack-seed-panel</includeArtifactIds>
                             <!-- IMPORTANT: this causes *only* our custom panels to be copied -->
                         </configuration>
                     </execution>
@@ -110,8 +110,8 @@
                         <version>${izpack.version}</version>
                     </dependency>
                     <dependency>
-                        <groupId>com.kdefombelle.sample</groupId>
-                        <artifactId>sample-izpack-panel</artifactId>
+                        <groupId>fr.kdefombelle.sample</groupId>
+                        <artifactId>izpack-seed-panel</artifactId>
                         <version>${project.version}</version>
                     </dependency>
                 </dependencies>
@@ -130,15 +130,15 @@
         </dependency>
 
         <dependency>
-            <groupId>com.kdefombelle.sample</groupId>
-            <artifactId>sample-package</artifactId>
+            <groupId>fr.kdefombelle.sample</groupId>
+            <artifactId>izpack-seed-package</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
 
         <dependency>
-            <groupId>com.kdefombelle.sample</groupId>
-            <artifactId>sample-izpack-panel</artifactId>
+            <groupId>fr.kdefombelle.sample</groupId>
+            <artifactId>izpack-seed-panel</artifactId>
             <version>${project.version}</version>
         </dependency>
 

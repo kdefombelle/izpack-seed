@@ -43,7 +43,7 @@
             <unpack>false</unpack>
             <scope>runtime</scope>
             <includes>
-                <include>com.kdefombelle.sample:sample-application</include>
+                <include>fr.kdefombelle.sample:izpack-seed-sample-app</include>
             </includes>
         </dependencySet>
 

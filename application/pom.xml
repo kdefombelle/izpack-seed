@@ -6,16 +6,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.kdefombelle.sample</groupId>
-        <artifactId>izpack-sample-parent</artifactId>
+        <groupId>fr.kdefombelle.sample</groupId>
+        <artifactId>izpack-seed-project</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.kdefombelle.sample</groupId>
-    <artifactId>sample-application</artifactId>
+    <artifactId>izpack-seed-sample-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Application :: Sample Application</name>
+    <name>IzPack Seed :: Sample Application</name>
 
     <properties>
         <slf4j.version>1.7.5</slf4j.version>

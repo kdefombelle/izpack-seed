@@ -4,14 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-    		<groupId>com.kdefombelle.sample</groupId>
-    		<artifactId>sample-install-parent</artifactId>
+    		<groupId>fr.kdefombelle.sample</groupId>
+    		<artifactId>izpack-seed-install-parent</artifactId>
 		 <version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>izpack-panel</artifactId>
+	<artifactId>izpack-seed-panel</artifactId>
 
-	<name>Install :: IzPack Panels</name>
+	<name>IzPack Seed :: Install Panel</name>
 
 	<dependencies>
 		<dependency>
