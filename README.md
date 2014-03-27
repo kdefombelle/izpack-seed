@@ -5,7 +5,7 @@ This project could be used as an example to create an [IzPack](http://izpack.org
 ## Maven modules
 The sample project is organised as follows:
 
-    izpack-sample
+    izpack-seed
     +-application
     +-install
     |    \-package
