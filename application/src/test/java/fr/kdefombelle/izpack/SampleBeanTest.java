@@ -1,13 +1,12 @@
-package fr.kdefombelle.sample;
+package fr.kdefombelle.izpack;
 
 
-import fr.kdefombelle.sample.SampleApplicationBean;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 /**
- * Unit test for sample bean.
+ * Unit test for izpack bean.
  */
 public class SampleBeanTest {
 

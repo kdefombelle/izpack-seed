@@ -67,7 +67,7 @@
 
     <panels>
 
-        <!-- <panel classname="com.kdefombelle.sample.FirstPanel" /> -->
+        <!-- <panel classname="com.kdefombelle.izpack.FirstPanel" /> -->
         <panel id="hello" classname="HelloPanel" />
         <panel id="licence" classname="LicencePanel" />
         <panel id="target" classname="TargetPanel" />

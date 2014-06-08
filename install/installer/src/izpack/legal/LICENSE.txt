@@ -1,4 +1,5 @@
 /**
- *  Copyright kdefombelle https://github.com/kdefombelle. All Rights Reserved.
+ *  Copyright kdefombelle https://github.com/kdefombelle.
+ *  All Rights Reserved.
  *
  */

@@ -1,4 +1,4 @@
-package fr.kdefombelle.sample;
+package fr.kdefombelle.izpack;
 
 import org.apache.commons.lang.Validate;
 import org.slf4j.Logger;

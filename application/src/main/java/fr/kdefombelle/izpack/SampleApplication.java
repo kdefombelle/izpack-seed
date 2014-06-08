@@ -1,4 +1,4 @@
-package fr.kdefombelle.sample;
+package fr.kdefombelle.izpack;
 
 /**
  * Hello world!
