@@ -1,5 +1,6 @@
 language: java
 jdk:
   - oraclejdk7
-after_success:
+script:
    - mvn clean cobertura:cobertura
+   - mvn test
