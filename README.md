@@ -22,8 +22,8 @@ Unlike IzPack [wiki](http://docs.codehaus.org/display/IZPACK/Compiling+Using+Mav
 * an additional __panel__ module
 * an __IzPack installer__ module
 
-Once built (mvn clean install), the installer will be generated under install/installer/target/izpack-seed-installer-${project.version}.jar  
-Execute the jar double cliking on it or executing java - jar izpack-seed-installer-${project.version}.jar  
+Once built using `mvn clean install`, the installer will be generated under _install/installer/target/izpack-seed-installer-${project.version}.jar_  
+Execute the jar double clicking on it or executing `java - jar izpack-seed-installer-${project.version}.jar`
 The installer is launched.
 
 Finally to execute the application, go to its installation directory and run
