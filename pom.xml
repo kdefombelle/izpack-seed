@@ -14,6 +14,21 @@
 
     <url>https://github.com/kdefombelle/izpack-install.git</url>
 
+    <developers>
+      <developer>
+        <id>kdefombelle</id>
+        <name>Karim de Fombelle</name>
+        <email>karim.defombelle@yahoo.fr</email>
+      </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
