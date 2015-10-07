@@ -16,7 +16,7 @@ The sample project is organised as follows:
 A dummy application displaying a parameter in a log.
 
 ### Install modules
-Unlike IzPack [wiki](http://docs.codehaus.org/display/IZPACK/Compiling+Using+Maven), for the sake of code organisation, this sample proposes an approach with 3 modules instead of 2 in IzPack documentation.
+Unlike IzPack [wiki](https://izpack.atlassian.net/wiki/display/IZPACK/Compiling+Using+Maven), for the sake of code organisation, this sample proposes an approach with 3 modules instead of 2 in IzPack documentation.
 
 * an assembly module called __package__
 * an additional __panel__ module
